@@ -28,18 +28,18 @@ public class OnlineExamSystem {
         System.out.println("Welcome to the Online Exam System!");
         System.out.println("Please log in to start the exam.");
 
-        // Simulating user login (you can replace this with actual authentication)
+        
         System.out.print("Username: ");
         String username = scanner.nextLine();
         System.out.print("Password: ");
         String password = scanner.nextLine();
 
-        // Validate user credentials (dummy check for demonstration)
+        
         if (username.equals("admin") && password.equals("secret")) {
             System.out.println("\nLogin successful! Let's begin the exam.");
             System.out.println("You have " + totalQuestions + " questions.");
 
-            // Set exam duration (adjust as needed)
+            // Set exam duration
             int examDurationMinutes = 10;
             long endTime = System.currentTimeMillis() + examDurationMinutes * 60 * 1000;
 
@@ -59,7 +59,7 @@ public class OnlineExamSystem {
                     System.out.println("Incorrect. The correct answer is: " + answers[i]);
                 }
 
-                // Check if time is up
+                
                 if (System.currentTimeMillis() >= endTime) {
                     System.out.println("\nTime's up! Submitting your answers.");
                     break;
